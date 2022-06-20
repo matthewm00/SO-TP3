@@ -1,4 +1,4 @@
-CC= gcc
+GCC= gcc
 GCCFLAGS= -std=c99 -Wall -pedantic
 GCCLIBS= -lm
 
@@ -12,13 +12,13 @@ EXECUTABLE_SERVER= server
 EXECUTABLE_CLIENT= client
 
 all: $(OBJECTS_CHALLENGES) client
-	$(CC) $(GCCFLAGS) $(SOURCES_SERVER) $(OBJECTS_CHALLENGES) -I./include -o $(EXECUTABLE_SERVER) $(GCCLIBS)
+	$(GCC) $(GCCFLAGS) $(SOURCES_SERVER) $(OBJECTS_CHALLENGES) -I./include -o $(EXECUTABLE_SERVER) $(GCCLIBS)
 
 %.o: %.c
-	$(CC) $(GCCFLAGS) -I./include -c $^ $(GCCLIBS)
+	$(GCC) $(GCCFLAGS) -I./include -c $^ $(GCCLIBS)
 
 client:
-	$(CC) $(GCCFLAGS) $(SOURCES_CLIENT) -o $(EXECUTABLE_CLIENT)
+	$(GCC) $(GCCFLAGS) $(SOURCES_CLIENT) -o $(EXECUTABLE_CLIENT)
 
 clean:
 	rm -rf *.o server client
