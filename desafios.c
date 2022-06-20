@@ -83,6 +83,11 @@ int challenge(int challenge_id)
     system("clear");
     challenge_id--;
     game.level = challenge_id;
+    if(game.level == 0){
+      for(int i=0; i<10; i++){
+        printf("%s", welcome_msg[i]);
+      } 
+    }
     print_challenge_header();
     return game.challenges[challenge_id]();
 }
@@ -96,8 +101,6 @@ void end()
 
 static int challenge_1()
 {
-    printf(welcome_msg);
-
     printf(
         "Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.\n\n"
         "En este TP deberán finalizar el juego que ya comenzaron resolviendo los desafíos de cada nivel."
