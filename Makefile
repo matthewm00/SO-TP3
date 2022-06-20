@@ -23,4 +23,10 @@ client:
 clean:
 	rm -rf *.o server client
 
+cleanTest:
+	rm -rf output.cppOut report.tasks results.valgrind
+
+test: clean 
+	./pvs.sh; cppcheck --quiet --enable=all --force --suppress=missingIncludeSystem --inconclusive server.c desafios.c client.c 2>> output.cppOut; valgrind --leak-check=full -v ./server 2>> results.valgrind; valgrind --leak-check=full -v ./client 2>> results.valgrind 
+
 .PHONY: all clean cleanTest test client

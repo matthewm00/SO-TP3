@@ -1,3 +1,5 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
 // Server side C/C++ program to demonstrate Socket
 /*
     Implementación sacada de: https://www.geeksforgeeks.org/socket-programming-cc/

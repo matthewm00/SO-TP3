@@ -1,3 +1,5 @@
+// This is a personal academic project. Dear PVS-Studio, please check it.
+// PVS-Studio Static Code Analyzer for C, C++ and C#: http://www.viva64.com
 // Client side C/C++ program to demonstrate Socket
 #include "desafios.h"
 #include <arpa/inet.h>
@@ -13,7 +15,7 @@
 
 int main(int argc, char const *argv[])
 {
-    int sock = 0, client_fd;
+    int sock = 0;
     struct sockaddr_in serv_addr;
     char buffer[MAX_BUFFER];
     int buffIndex = 0;
@@ -34,7 +36,7 @@ int main(int argc, char const *argv[])
         return -1;
     }
 
-    if ((client_fd = connect(sock, (struct sockaddr *)&serv_addr,
+    if ((connect(sock, (struct sockaddr *)&serv_addr,
                              sizeof(serv_addr))) < 0)
     {
         printf("\nConnection Failed \n");

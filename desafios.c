@@ -57,8 +57,6 @@ static const char end_msg[] = "\nFelicitaciones, finalizaron el juego. Ahora deb
 
 void init(FILE *fp)
 {
-    printf(welcome_msg);
-
     game.fp = fp;
     game.level = 0;
 
@@ -98,6 +96,8 @@ void end()
 
 static int challenge_1()
 {
+    printf(welcome_msg);
+
     printf(
         "Bienvenidos al TP3 y felicitaciones, ya resolvieron el primer acertijo.\n\n"
         "En este TP deberán finalizar el juego que ya comenzaron resolviendo los desafíos de cada nivel."
