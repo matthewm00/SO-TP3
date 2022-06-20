@@ -172,7 +172,7 @@ static int challenge_5()
 {
     if (too_easy)
     {
-        printf("respuesta = strings:250\n");
+        printf("respuesta = strings: 277\n");
         print_investigate_msg();
         printf("¿Cómo garantiza TCP que los paquetes llegan en orden y no se pierden?\n");
 
@@ -187,7 +187,7 @@ static int challenge_5()
 
 static int challenge_6()
 {
-    printf(".init .plt .text ? .fini .rodata .eh_frame_hdr\n");
+    printf(".data .bss .comment ? .shstrtab .symtab .strtab\n");
     print_investigate_msg();
     printf(
         "Un servidor suele crear un nuevo proceso o thread para atender las conexiones entrantes."

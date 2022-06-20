@@ -59,7 +59,7 @@ Un servidor suele crear un nuevo proceso o thread para atender las conexiones en
 ------------- DESAFIO -------------
 Filter error
 
-`pC_5aVtFLa r}4Mt0}21nC\eR::![4_sMwZipU:isOAjuF~/:!"eh1Q>Vs'utaUaAzJhX2 MVfw1e sU$##:>Rv E _K{9<M3wDlrAG5nZ2iyA$US@F5jd}h40\q=.f/OxJ#p+TpG;&P5`DP0@Z|F);oTmxMmBUcgNz6`
+`zkJQJ}LoYyLKa rm3}/l|queFkqV-LYtsJYH+_fp)HuQSLf;i$@m_CvEhk')uUan?<rReb,jS=sA9WLDNjHU2Z0t_F}9ma]@o`S6~.RhwhC)+ eee/5sKHs@e%J gF4Vla_X?O3P2CK5j7nKgC29!e2Nb`009+'y%UFQb'q\V:fJp38|Xv8^';F-AM^-UB@@g5QqNGwRuLN/;5]`h`
 
 *RTA: K5n2UFfpFMUN* (./server 2 > output).
 ----- PREGUNTA PARA INVESTIGAR -----
